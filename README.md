@@ -108,7 +108,7 @@ The benefit here is that it's explicitly set. However, note that the `DB_PASSWOR
 5. Check AWS CloudWatch for application logs
 
 ### Deliverables
-1. `Dockerfile`
+1. `Dockerfile.`
 2. Screenshot of AWS CodeBuild pipeline
 3. Screenshot of AWS ECR repository for the application's repository
 4. Screenshot of `kubectl get svc`
