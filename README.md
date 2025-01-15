@@ -9,8 +9,8 @@ The ```deployment``` directory contains two files:
 - ```coworking.yaml``` for the K8s Deployment configuration.
 
 ## Continuous Deployment Using CodeBuild and ECR
-On ```PULL_REQUEST_MERGE```, the GitHub hook notifies CloudBuild which proceeds to run the pipeline as per ```codebuild.yml```.
-The creates a Docker image using ```Dockerfile``` and uploads it to ECR.</p>
+On ```PULL_REQUEST_MERGE```, the GitHub hook notifies CloudBuild which proceeds to run the pipeline as per ```buildspec.yml```.
+The pipeline consists of creating a Docker image using ```Dockerfile``` and uploading it to ECR. The image is tagged with the ```$CODEBUILD_BUILD_NUMBER``` provided by CloudBuild.</p>
 Run ```kubectl apply -f deployment/``` to deploy the configuration for the analytics application contained in the ```deployment``` directory.
 
 ## Troubleshooting
