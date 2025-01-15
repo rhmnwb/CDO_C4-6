@@ -1,6 +1,6 @@
 # CD12355 - Microservices at scale using AWS and Kubernetes
 # Raul Herrera Marcos
-
+The following description assumes that the postgres Deployment is __not__ part of the CD process.</p>
 ## EKS
 An EKS cluster manages this analytics application. The cluster only contains two pods: one with a for a  ```postgres``` database and another for the application itself.</p>
 The cluster has been created with the following configuration: ```--node-type t3.small --nodes 1 --nodes-min 1 --nodes-max 2```.</p>
